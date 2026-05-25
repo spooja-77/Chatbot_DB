@@ -177,9 +177,9 @@ section[data-testid="stSidebar"] {
 # ─────────────────────────────────────────────────────────────
 
 DB_SERVER   = "YOUR_SERVER_IP"
-DB_DATABASE = "graffana"
-DB_USERNAME = "YOUR_USERNAME"
-DB_PASSWORD = "YOUR_PASSWORD"
+DB_DATABASE = "Grafana"
+DB_USERNAME = "10.111.0.16\SQLEXPRESS"
+DB_PASSWORD = "Rbs@54321"
 
 connection_string = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"
