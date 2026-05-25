@@ -190,12 +190,12 @@ connection_string = (
     "TrustServerCertificate=yes;"
 )
 
-params = urllib.parse.quote_plus(connection_string)
 
 engine = create_engine(
-    f"mssql+pyodbc:///?odbc_connect={params}",
-    pool_pre_ping=True
+    f"mssql+pymssql://{DB_USERNAME}:{DB_PASSWORD}@{DB_SERVER}/{DB_DATABASE}"
 )
+
+
 
 
 # ─────────────────────────────────────────────────────────────
